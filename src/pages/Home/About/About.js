@@ -13,8 +13,8 @@ const About = () => {
                         <h4>Great Fitness Training</h4>
                         <p>Train with the best expert in bodybuilding field.</p>
 
-                        <h4>Yoga and meditation</h4>
-                        <p>Train with yoga and meditation also.</p>
+                        <h4>Fitness Exercise Routine</h4>
+                        <p>Train with proper time and routine</p>
                     </div>
                     <div className="col-md-6">
                         <div className="image">
