@@ -1,0 +1,27 @@
+.navbar {
+    background-color: #222;
+    position: static;
+    top: 0;
+    width: 100%;
+}
+
+.navbar .navbar-brand {
+    padding: 0;
+}
+
+.navbar .navbar-brand img {
+    width: 150px;
+}
+
+.navbar-nav .nav-link {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 20px;
+    color: #fff !important;
+    padding: 10px !important;
+}
+
+.navbar-nav .active-link {
+    color: #bb0000 !important;
+}
