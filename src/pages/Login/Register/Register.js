@@ -114,13 +114,13 @@ const Register = () => {
 
                             <Form.Group className="mb-3" controlId="formBasicPassword">
                                 <Form.Label>Password</Form.Label>
-                                <Form.Control type="text" placeholder="Password" name="password" required onChange={handlePassword}/>
+                                <Form.Control type="password" placeholder="Password" name="password" required onChange={handlePassword}/>
                                 {errors?.password && <p className='error-msg'><AiOutlineInfoCircle className='error-icon'/>{errors.password}</p>}
                             </Form.Group>
 
                             <Form.Group className="mb-3" controlId="formBasicPassword">
                                 <Form.Label>Confirm Password</Form.Label>
-                                <Form.Control type="text" placeholder="Confirm password" name="confirmPassword" required onChange={handleConfirmPassword}/>
+                                <Form.Control type="password" placeholder="Confirm password" name="confirmPassword" required onChange={handleConfirmPassword}/>
                                 {errors?.confirmPassword && <p className='error-msg'><AiOutlineInfoCircle className='error-icon'/>{errors.confirmPassword}</p>}
                             </Form.Group>
 
