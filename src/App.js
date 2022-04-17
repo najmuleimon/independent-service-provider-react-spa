@@ -10,6 +10,7 @@ import Register from './pages/Login/Register/Register';
 import NotFound from './pages/NotFound/NotFound';
 import { Routes, Route } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import RequireAuth from './pages/Login/RequireAuth/RequireAuth';
 
 function App() {
   return (
@@ -17,7 +18,11 @@ function App() {
       <Header />
         <Routes>
           <Route path="/" element={<Home/>}></Route>
-          <Route path="/checkout" element={<Checkout/>}></Route>
+          <Route path="/checkout" element={
+            <RequireAuth>
+              <Checkout/>
+            </RequireAuth>
+          }></Route>
           <Route path="/blogs" element={<Blogs/>}></Route>
           <Route path="/about-me" element={<AboutMe/>}></Route>
           <Route path="/login" element={<Login/>}></Route>

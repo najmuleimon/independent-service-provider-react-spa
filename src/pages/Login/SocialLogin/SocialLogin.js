@@ -1,4 +1,5 @@
 import React from 'react';
+import {FaGoogle} from 'react-icons/fa';
 
 const SocialLogin = () => {
     return (

@@ -5,6 +5,7 @@ import { useCreateUserWithEmailAndPassword, useUpdateProfile } from 'react-fireb
 import auth from '../../../firebase.init';
 import { Link, useNavigate } from 'react-router-dom';
 import Loading from '../../Shared/Loading/Loading';
+import {AiOutlineInfoCircle} from 'react-icons/ai';
 import './Register.css';
 
 const Register = () => {
@@ -108,24 +109,24 @@ const Register = () => {
                             <Form.Group className="mb-3" controlId="formBasicEmail">
                                 <Form.Label>Email address</Form.Label>
                                 <Form.Control type="email" placeholder="Enter email" name="email" required onChange={handleEmail}/>
-                                {errors?.email && <p className='error-msg'>{errors.email}</p>}
+                                {errors?.email && <p className='error-msg'><AiOutlineInfoCircle className='error-icon'/>{errors.email}</p>}
                             </Form.Group>
 
                             <Form.Group className="mb-3" controlId="formBasicPassword">
                                 <Form.Label>Password</Form.Label>
                                 <Form.Control type="text" placeholder="Password" name="password" required onChange={handlePassword}/>
-                                {errors?.password && <p className='error-msg'>{errors.password}</p>}
+                                {errors?.password && <p className='error-msg'><AiOutlineInfoCircle className='error-icon'/>{errors.password}</p>}
                             </Form.Group>
 
                             <Form.Group className="mb-3" controlId="formBasicPassword">
                                 <Form.Label>Confirm Password</Form.Label>
                                 <Form.Control type="text" placeholder="Confirm password" name="confirmPassword" required onChange={handleConfirmPassword}/>
-                                {errors?.confirmPassword && <p className='error-msg'>{errors.confirmPassword}</p>}
+                                {errors?.confirmPassword && <p className='error-msg'><AiOutlineInfoCircle className='error-icon'/>{errors.confirmPassword}</p>}
                             </Form.Group>
 
                             <Form.Group className="mb-3" controlId="formBasicCheckbox">
                                 <Form.Check type="checkbox" label="I agree the Terms and Conditions" name="terms" />
-                                {errors?.agree && <p className='error-msg'>{errors.agree}</p>}
+                                {errors?.agree && <p className='error-msg'><AiOutlineInfoCircle className='error-icon'/>{errors.agree}</p>}
                             </Form.Group>
                             <button type="submit" className='submit-btn'>
                                 Sign up

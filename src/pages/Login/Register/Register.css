@@ -16,6 +16,14 @@
     text-transform: capitalize;
 }
 
+.sign-in-up .form-label {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    color: #222;
+}
+
 .sign-in-up .submit-btn {
     font-family: 'Oswald', sans-serif;
     font-size: 18px;
@@ -52,7 +60,7 @@
     font-size: 16px;
     color: #444;
     font-weight: 400;
-    padding-top: 30px;
+    padding-top: 20px;
 }
 
 .sign-in-up p a {
@@ -62,4 +70,8 @@
 .sign-in-up .error-msg {
     color: #e23e38;
     padding-top: 10px;
+}
+
+.sign-in-up .error-msg .error-icon {
+    margin-right: 6px;
 }

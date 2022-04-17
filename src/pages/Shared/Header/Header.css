@@ -21,6 +21,9 @@
     line-height: 20px;
     color: #fff !important;
     padding: 10px !important;
+    border: 0;
+    background-color: transparent;
+    outline: none;
 }
 
 .navbar-nav .active-link {

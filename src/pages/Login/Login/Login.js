@@ -5,6 +5,7 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../../firebase.init';
 import Loading from '../../Shared/Loading/Loading';
 import SocialLogin from '../SocialLogin/SocialLogin';
+import {AiOutlineInfoCircle} from 'react-icons/ai';
 import './Login.css';
 
 const Login = () => {
@@ -99,13 +100,13 @@ const Login = () => {
                             <Form.Group className="mb-3" controlId="formBasicEmail">
                                 <Form.Label>Email address</Form.Label>
                                 <Form.Control type="email" placeholder="Enter email" name="email" required onChange={handleEmail}/>
-                                {errors?.email && <p className='error-msg'>{errors.email}</p>}
+                                {errors?.email && <p className='error-msg'><AiOutlineInfoCircle className='error-icon'/>{errors.email}</p>}
                             </Form.Group>
 
                             <Form.Group className="mb-3" controlId="formBasicPassword">
                                 <Form.Label>Password</Form.Label>
                                 <Form.Control type="password" placeholder="Password" name="password" required onChange={handlePassword}/>
-                                {errors?.password && <p className='error-msg'>{errors.password}</p>}
+                                {errors?.password && <p className='error-msg'><AiOutlineInfoCircle className='error-icon'/>{errors.password}</p>}
                             </Form.Group>
                             <button type="submit" className='submit-btn'>
                                 Login
@@ -114,7 +115,7 @@ const Login = () => {
                         {errors?.general && <p className='error-msg'>{errors.general}</p>}
 
                         <button className='forget-pass' onClick={handleForgetPass}>Forget Password?</button>
-                        <p>New to Ema-john? <Link to="/register">Create New Account</Link></p>
+                        <p>New to Muscle Magic? <Link to="/register">Create New Account</Link></p>
                         <div className="divider d-flex align-items-center">
                             <div className="w-50"></div>
                             <span>or</span>

@@ -24,3 +24,7 @@ p {
   margin: 0;
   padding: 0;
 }
+
+p {
+  margin-bottom: 0 !important;
+}
