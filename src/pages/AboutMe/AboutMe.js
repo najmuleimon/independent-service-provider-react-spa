@@ -7,12 +7,12 @@ const AboutMe = () => {
         <div className='about-me'>
             <div className="container">
                 <div className="row align-items-center">
-                    <div className="col-md-5">
+                    <div className="col-lg-5">
                         <div className="image">
                             <img src={about} className="img-fluid" alt="" />
                         </div>
                     </div>
-                    <div className="col-md-7">
+                    <div className="col-lg-7">
                         <h2>About Me</h2>
                         <p>My goal is to be a professional web developer and work on a local or global industries to utilize my web development skills. My another goal is to be a a successful person.</p>
                         <p>To be a professional and successful web developer I have to learn and develop without any limit. I have to learn a lot. There is no limit of learning and earning to enhance my skills. We have to practice every day as more time as I can.</p>

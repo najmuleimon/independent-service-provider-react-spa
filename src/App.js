@@ -26,7 +26,7 @@ function App() {
             </RequireAuth>
           }></Route>
           <Route path="/blogs" element={<Blogs/>}></Route>
-          <Route path="/about-me" element={<AboutMe/>}></Route>
+          <Route path="/about" element={<AboutMe/>}></Route>
           <Route path="/login" element={<Login/>}></Route>
           <Route path="/register" element={<Register/>}></Route>
           <Route path="*" element={<NotFound/>}></Route>

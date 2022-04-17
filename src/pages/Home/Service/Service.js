@@ -12,7 +12,7 @@ const Service = ({service}) => {
 
     const navigate = useNavigate();
     return (
-        <div className='col-md-4'>
+        <div className='col-md-6 col-lg-4'>
             <Card>
                 <Card.Img variant="top" className='img-fluid' src={img} />
                 <Card.Body>

@@ -46,3 +46,9 @@
     border: 0;
     outline: none;
 }
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .checkout .main-area {
+        padding: 30px 15px;
+    }
+}

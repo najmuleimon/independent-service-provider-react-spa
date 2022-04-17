@@ -98,7 +98,7 @@ const Register = () => {
     return (
         <div className='sign-in-up container'>
             <div className="row">
-                <div className="col-md-6 offset-md-3 text-center">
+                <div className="col-xl-6 offset-xl-3 col-lg-8 offset-lg-2 text-center">
                     <h2>sign up</h2>
                     <div className="main-area">
                         

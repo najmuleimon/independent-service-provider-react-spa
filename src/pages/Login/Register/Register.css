@@ -84,3 +84,9 @@
 .sign-in-up .error-msg .error-icon {
     margin-right: 6px;
 }
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .sign-in-up .main-area {
+        padding: 30px 15px;
+    }
+}

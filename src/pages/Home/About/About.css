@@ -30,3 +30,10 @@
     font-weight: 500;
     color: #222;
 }
+
+@media (min-width: 320px) and (max-width: 991px) {
+    .about .image {
+        margin-bottom: 30px;
+        text-align: center;
+    }
+}

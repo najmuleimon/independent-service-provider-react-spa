@@ -43,3 +43,23 @@
     border: 0;
     outline: none;
 }
+
+@media (min-width: 320px) and (max-width: 575px) {
+    .banner h1 {
+        font-size: 46px;
+    }
+
+    .banner p {
+        padding: 0 0 20px 0;
+    }
+
+    footer p {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .banner p {
+        padding: 0 0 20px 0;
+    }
+}
