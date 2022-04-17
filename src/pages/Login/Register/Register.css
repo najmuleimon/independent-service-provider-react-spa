@@ -1,0 +1,65 @@
+.sign-in-up {
+    padding: 80px 0;
+}
+
+.sign-in-up .main-area {
+    padding: 30px;
+    border: 1px solid #444;
+}
+
+.sign-in-up h2 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 42px;
+    color: #222;
+    text-transform: capitalize;
+}
+
+.sign-in-up .submit-btn {
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    line-height: 40px;
+    font-weight: 600;
+    color: #fff;
+    background-color: #e23e38;
+    width: 100%;
+    display: block;
+    border: 0;
+    outline: none;
+}
+
+.sign-in-up .divider {
+    margin: 0 50px;
+}
+
+.sign-in-up .divider div {
+    height: 1px;
+    background-color: #444;
+    margin-top: 5px;
+}
+
+.sign-in-up .divider span {
+    display: inline-block;
+    font-size: 18px;
+    color: #444;
+    padding: 0 10px;
+    font-weight: 400;
+    height: fit-content;
+}
+
+.sign-in-up p {
+    font-size: 16px;
+    color: #444;
+    font-weight: 400;
+    padding-top: 30px;
+}
+
+.sign-in-up p a {
+    color: #e23e38;
+}
+
+.sign-in-up .error-msg {
+    color: #e23e38;
+    padding-top: 10px;
+}

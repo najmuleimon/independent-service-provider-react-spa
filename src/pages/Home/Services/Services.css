@@ -7,7 +7,7 @@
     padding-bottom: 60px;
 }
 
-.card {
+.service .card {
     margin-bottom: 25px;
     border: 1px solid #e23e38;
     border-radius: 0;
@@ -23,7 +23,7 @@
     -o-transition: all linear 0.2s;
 }
 
-.card:hover {
+.service .card:hover {
     box-shadow: 5px 5px 0 #e23e38;
 }
 
