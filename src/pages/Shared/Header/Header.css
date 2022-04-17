@@ -1,8 +1,9 @@
 .navbar {
     background-color: #222;
-    position: static;
+    position: sticky !important;
     top: 0;
     width: 100%;
+    z-index: 99;
 }
 
 .navbar .navbar-brand {

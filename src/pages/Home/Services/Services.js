@@ -1,5 +1,6 @@
 import React from 'react';
 import Service from '../Service/Service';
+import './Services.css';
 import service1 from '../../../images/service1.jpg';
 import service2 from '../../../images/service2.jpg';
 import service3 from '../../../images/service3.jpg';
@@ -22,7 +23,7 @@ const Services = () => {
         <div className='service'>
             <div className="container">
                 <div className="row">
-                    <div className="col-md-12">
+                    <div className="col-md-12 text-center">
                         <h2>My Services</h2>
                     </div>
                     {

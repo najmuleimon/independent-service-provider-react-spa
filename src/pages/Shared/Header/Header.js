@@ -16,6 +16,7 @@ const Header = () => {
                 <Nav className="ms-auto">
                     <NavLink to="/" className={({ isActive }) => (isActive ? "active-link nav-link" : "nav-link")}>Home</NavLink>
                     <NavLink to="/about-me" className={({ isActive }) => (isActive ? "active-link nav-link" : "nav-link")}>About Me</NavLink>
+                    <NavLink to="/checkout" className={({ isActive }) => (isActive ? "active-link nav-link" : "nav-link")}>Checkout</NavLink>
                     <NavLink to="/blogs" className={({ isActive }) => (isActive ? "active-link nav-link" : "nav-link")}>Blogs</NavLink>
                     <NavLink to="/login" className={({ isActive }) => (isActive ? "active-link nav-link" : "nav-link")}>Login</NavLink>
                 </Nav>
