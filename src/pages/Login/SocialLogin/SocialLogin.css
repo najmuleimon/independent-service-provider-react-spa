@@ -1,0 +1,16 @@
+.social-btn button {
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    line-height: 40px;
+    font-weight: 600;
+    color: #fff;
+    background-color: #e23e38;
+    width: 100%;
+    display: block;
+    border: 0;
+    outline: none;
+}
+
+.social-btn button .google-icon {
+    margin-right: 20px;
+}
