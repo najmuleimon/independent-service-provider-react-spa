@@ -94,8 +94,9 @@ const Login = () => {
         <div className='sign-in-up login container'>
             <div className="row">
                 <div className="col-md-6 offset-md-3 text-center">
+                    <h2>Login</h2>
                     <div className="main-area">
-                        <h2>Login</h2>
+                        
                         <Form className='text-start' onSubmit={handleLogin}>
                             <Form.Group className="mb-3" controlId="formBasicEmail">
                                 <Form.Label>Email address</Form.Label>

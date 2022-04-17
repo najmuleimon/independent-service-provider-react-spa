@@ -99,8 +99,9 @@ const Register = () => {
         <div className='sign-in-up container'>
             <div className="row">
                 <div className="col-md-6 offset-md-3 text-center">
+                    <h2>sign up</h2>
                     <div className="main-area">
-                        <h2>sign up</h2>
+                        
                         <Form className='text-start' onSubmit={handleSignUp}>
                             <Form.Group className="mb-3" controlId="formBasicEmail">
                                 <Form.Label>Name</Form.Label>
