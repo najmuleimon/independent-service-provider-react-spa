@@ -25,6 +25,14 @@
     color: #222;
 }
 
+.sign-in-up .form-control {
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+}
+
 .sign-in-up .submit-btn {
     font-family: 'Oswald', sans-serif;
     font-size: 18px;

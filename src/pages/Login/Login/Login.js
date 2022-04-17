@@ -6,6 +6,8 @@ import auth from '../../../firebase.init';
 import Loading from '../../Shared/Loading/Loading';
 import SocialLogin from '../SocialLogin/SocialLogin';
 import {AiOutlineInfoCircle} from 'react-icons/ai';
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import './Login.css';
 
 const Login = () => {
@@ -63,14 +65,15 @@ const Login = () => {
 
     useEffect(() => {
         if(signInError){
-            setErrors({...errors, general: signInError.message})
+            setErrors({...errors, general: signInError.message});
+            toast("Login Failed!!");
         }
     }, [signInError])
 
     useEffect(() => {
         if(user){
             navigate(from, { replace: true });
-            console.log(user);
+            toast("Login Successful!!");
         }
     }, [user])
     
@@ -78,6 +81,7 @@ const Login = () => {
         const email = userInfo.email;
         if (email) {
             await sendPasswordResetEmail(email);
+            toast('Email already sent');
         }
         else{
             setErrors({...errors, general: "Please enter your email address"})

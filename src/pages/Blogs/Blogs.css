@@ -1,5 +1,10 @@
 .blogs {
-    padding: 80px 0;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+
+.blogs .single-blog {
+    padding-bottom: 30px;
 }
 
 .blogs h2 {
@@ -15,4 +20,5 @@
     line-height: 24px;
     font-weight: 400;
     color: #444;
+    padding-bottom: 10px;
 }

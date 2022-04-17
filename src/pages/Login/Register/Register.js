@@ -6,6 +6,8 @@ import auth from '../../../firebase.init';
 import { Link, useNavigate } from 'react-router-dom';
 import Loading from '../../Shared/Loading/Loading';
 import {AiOutlineInfoCircle} from 'react-icons/ai';
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import './Register.css';
 
 const Register = () => {
@@ -81,17 +83,15 @@ const Register = () => {
     useEffect(() => {
         if(createError){
             setErrors({...errors, general: createError.message});
+            toast("Register Failed!!");
         }
-        // if(updateError){
-        //     setErrors({...errors, general: updateError.message});
-        // }
     }, [createError]);
 
 
     useEffect(() => {
         if(user){
             navigate('/');
-            console.log(user);
+            toast('Register Successfully !!')
         }
     }, [user])
 

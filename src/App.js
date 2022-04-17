@@ -11,6 +11,8 @@ import NotFound from './pages/NotFound/NotFound';
 import { Routes, Route } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import RequireAuth from './pages/Login/RequireAuth/RequireAuth';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   return (
@@ -18,7 +20,7 @@ function App() {
       <Header />
         <Routes>
           <Route path="/" element={<Home/>}></Route>
-          <Route path="/checkout" element={
+          <Route path="/checkout/:serviceId" element={
             <RequireAuth>
               <Checkout/>
             </RequireAuth>
@@ -30,6 +32,7 @@ function App() {
           <Route path="*" element={<NotFound/>}></Route>
         </Routes>
       <Footer />
+      <ToastContainer/>
     </>
   );
 }

@@ -1,8 +1,15 @@
 import React from 'react';
 import Form from 'react-bootstrap/Form';
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import './Checkout.css';
 
 const Checkout = () => {
+    const handleCheckout = e => {
+        e.preventDefault();
+        toast("Thank you for the booking");
+    }
+
     return (
         <div className='checkout'>
             <div className="container">
@@ -35,8 +42,8 @@ const Checkout = () => {
                                     <Form.Label>Description</Form.Label>
                                     <Form.Control as="textarea" placeholder="Description" />
                                 </Form.Group>
-                                <button variant="primary" type="submit" className='proceed-btn'>
-                                    Proceed to checkout
+                                <button variant="primary" className='proceed-btn' onClick={handleCheckout}>
+                                    Proceed to Checkout
                                 </button>
                             </Form>
                         </div>
