@@ -1,5 +1,6 @@
 .sign-in-up {
     padding: 80px 0;
+    min-height: calc(100vh - 123px);
 }
 
 .sign-in-up .main-area {
