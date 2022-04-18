@@ -1,6 +1,6 @@
 # Muscle Magic Personal Gym Training Service Website
 
-Live Preview link: (https://github.com/facebook/create-react-app).
+Live Preview link: (https://gym-trainer-e2bb6.web.app).
 
 ## Features and Functionality of this Project
  - This website is about personal service providing website.
