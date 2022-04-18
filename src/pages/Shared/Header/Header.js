@@ -7,6 +7,7 @@ import { useAuthState } from 'react-firebase-hooks/auth';
 import auth from '../../../firebase.init';
 import { signOut } from 'firebase/auth';
 import {GiHamburgerMenu} from 'react-icons/gi';
+import {IoIosLogOut} from 'react-icons/io'
 
 const Header = () => {
     const [user, loading, error] = useAuthState(auth);
@@ -30,7 +31,7 @@ const Header = () => {
                     <NavLink to="/about" className={({ isActive }) => (isActive ? "active-link nav-link" : "nav-link")}>About Me</NavLink>
                     <NavLink to="/blogs" className={({ isActive }) => (isActive ? "active-link nav-link" : "nav-link")}>Blogs</NavLink>
                     {
-                        user ? <button className='nav-link text-start' onClick={handleSignOut}>Sign out</button> :
+                        user ? <button className='nav-link text-start' onClick={handleSignOut}>Sign out <IoIosLogOut/></button> :
                         <NavLink to="/login" className={({ isActive }) => (isActive ? "active-link nav-link" : "nav-link")}>Login</NavLink>
                     }
                 </Nav>

@@ -73,7 +73,12 @@
     color: #fff;
     background-color: #e23e38;
     padding: 0 30px;
-    display: inline-block;
+    display: flex;
     border: 0;
     outline: none;
+    align-items: center;
+}
+
+.card .card-btn .cart-icon {
+    margin-left: 10px;
 }

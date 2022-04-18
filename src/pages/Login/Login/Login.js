@@ -32,6 +32,7 @@ const Login = () => {
         }
     }, [])
 
+    // handle email
     const handleEmail = (event) => {
         const emailRegex = /\S+@\S+\.\S+/;
         const validEmail = emailRegex.test(event.target.value);
@@ -45,6 +46,7 @@ const Login = () => {
         }
     }
 
+    // handle password
     const handlePassword = (event) => {
         const passwordRegex = /.{6,}/;
         const validPassword = passwordRegex.test(event.target.value);
@@ -58,6 +60,7 @@ const Login = () => {
         }
     }
 
+    // handle login
     const handleLogin = (event) => {
         event.preventDefault();
         signInWithEmailAndPassword(userInfo.email, userInfo.password);
@@ -77,6 +80,7 @@ const Login = () => {
         }
     }, [user])
     
+    // handle reset password
     const handleForgetPass = async () => {
         const email = userInfo.email;
         if (email) {
@@ -100,7 +104,6 @@ const Login = () => {
                 <div className="col-xl-6 offset-xl-3 col-lg-8 offset-lg-2 text-center">
                     <h2>Login</h2>
                     <div className="main-area">
-                        
                         <Form className='text-start' onSubmit={handleLogin}>
                             <Form.Group className="mb-3" controlId="formBasicEmail">
                                 <Form.Label>Email address</Form.Label>

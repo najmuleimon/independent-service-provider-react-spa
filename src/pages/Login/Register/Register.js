@@ -23,6 +23,7 @@ const Register = () => {
     const [updateProfile, updating, updateError] = useUpdateProfile(auth);
     const navigate = useNavigate();
 
+    // handle email
     const handleEmail = (event) => {
         const emailRegex = /\S+@\S+\.\S+/;
         const validEmail = emailRegex.test(event.target.value);
@@ -36,6 +37,7 @@ const Register = () => {
         }
     }
 
+    // handle password
     const handlePassword = (event) => {
         const passwordRegex = /^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$/;
         const validPassword = passwordRegex.test(event.target.value);
@@ -49,6 +51,7 @@ const Register = () => {
         }
     }
 
+    // handle confirm password
     const handleConfirmPassword = (event) => {
         if (event.target.value === userInfo.password) {
             setUserInfo({ ...userInfo, confirmPassword: event.target.value });
@@ -59,6 +62,7 @@ const Register = () => {
         }
     }
 
+    // handle register
     const handleSignUp = async (event) => {
         event.preventDefault();
         const userName = event.target.userName.value;
