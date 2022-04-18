@@ -1,5 +1,6 @@
 .about-me {
     padding: 80px 0;
+    min-height: calc(100vh - 123px);
 }
 
 .about-me h2 {
